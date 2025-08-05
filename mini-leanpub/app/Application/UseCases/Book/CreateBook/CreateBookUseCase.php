@@ -22,6 +22,6 @@ class CreateBookUseCase
         $entity->validate();
 
         $result = $this->repository->create($data);
-        return new BookCreateOutputDTO($result->bookCode, $result->title);
+        return new BookCreateOutputDTO($result->book_code, $result->title, price: $result->price);
     }
 }
