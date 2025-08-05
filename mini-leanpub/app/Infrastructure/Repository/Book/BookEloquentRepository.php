@@ -1,6 +1,6 @@
 <?php
 
-namespace MiniLeanpub\Infrastructure\Book\Repository;
+namespace MiniLeanpub\Infrastructure\Repository\Book;
 
 use App\Models\Book;
 use MiniLeanpub\Domain\Book\Repository\BookRepositoryInterface;
