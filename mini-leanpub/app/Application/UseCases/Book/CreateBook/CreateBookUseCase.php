@@ -18,10 +18,10 @@ class CreateBookUseCase
     {
         $data = $this->input->getData();
 
-        $entity = new Book($data['id'], $data['title'], $data['description'], $data['price'], $data['bookPath'], $data['mimeType']);
+        $entity = new Book($data['bookCode'], $data['title'], $data['description'], $data['price'], $data['bookPath'], $data['mimeType']);
         $entity->validate();
 
         $result = $this->repository->create($data);
-        return new BookCreateOutputDTO($result->id, $result->title);
+        return new BookCreateOutputDTO($result->bookCode, $result->title);
     }
 }
