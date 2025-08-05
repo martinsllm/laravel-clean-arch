@@ -11,8 +11,11 @@
         <testsuite name="Feature">
             <directory>tests/Feature</directory>
         </testsuite>
-        <testsuite name="MiniLeanpub">
-            <directory>mini-leanpub/tests</directory>
+        <testsuite name="MiniLeanpubUnit">
+            <directory>mini-leanpub/tests/Unit</directory>
+        </testsuite>
+        <testsuite name="MiniLeanpubIntegration">
+            <directory>mini-leanpub/tests/Integration</directory>
         </testsuite>
     </testsuites>
     <source>
