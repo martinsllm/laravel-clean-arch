@@ -19,7 +19,7 @@ class ConvertBookToPDFUseCase
     {
         $book = $this->repository->find($this->input->getData()['bookCode']);
 
-        $this->queue->sendToQueue($book->book_code);
+        $this->queue->sendToQueue();
 
         //storage/app/books/uuid-v4/chapters/*md
 
